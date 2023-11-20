@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+}
+#finance-container {
+    text-align: center;
+    background-color: #000; 
+    color: #fff; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    width: 100%; 
+    max-height: 100vh;
+}
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+header {
+    background-color: #00ddff; 
+    padding: 10px;
+    color: #000000; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+}
+h1, h2{
+    margin: 0;
+    color: #fff; 
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+#transactions, #expenses {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    overflow: hidden;
+    border: 5px solid #00ddff; 
+}
+#balance{
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    overflow: hidden;
+    padding-top: 140px;
+     border: 5px solid #00ddff; 
+}
+select{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #000000; 
+    background-color: #00ddff;
+    cursor: pointer;
+    width: 90%;
+    border: 4px solid #ffffff;
+}
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    color: #000000; 
+    background-color: #00ddff; 
+    cursor: pointer;
+    width: 50%;
+}
+input {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #000000; 
+    background-color: #00ddff; 
+    cursor: pointer;
+    width: 80%;
+    border: 4px solid #ffffff;
+}
+input:focus, select:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #005555; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #000; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /
+}
+li span {
+    flex: 1;
+}
+#current-balance, #savings {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00ddff; 
+}
+#expenses {
+    background-color: #000; 
+}
+.expense-category {
+    font-weight: bold;
+    color: #fff; 
+}
+footer {
+    background-color: #00ddff; 
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-weight: bold;
+    color: #000000; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+}

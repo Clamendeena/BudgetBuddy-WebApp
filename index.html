@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+    <link rel="icon" href="coin.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="finance-container">
+        <header>
+            <h1>Budget Buddy</h1>
+        </header>
+        <main>
+            <div id="transactions">
+                <h2>Transactions</h2>
+                <ul id="transaction-list"></ul>
+                <form id="transaction-form">
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type" name="transaction-type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                        <option value="savings">Savings</option>
+                    </select><br><br>
+                    <label for="transaction-amount">Amount (₹):</label><br>
+                    <input type="number" id="transaction-amount" name="transaction-amount"><br><br>
+                    <label for="transaction-category">Category (if expense):</label>
+                    <input type="text" id="transaction-category" name="transaction-category"><br><br>
+                    <label for="transaction-date">Date (optional):</label>
+                    <input type="date" id="transaction-date" name="transaction-date">
+                    <button type="button" id="add-transaction">Add Transaction</button>
+                </form>
+            </div>
+            <div id="balance">
+                <h2>Current Balance</h2>
+                <p><span id="current-balance">0.00</span></p>
+                <h2>Savings</h2>
+                <p><span id="savings">0.00</span></p>
+            </div>
+            <div id="expenses">
+                <h2>Expense Details</h2>
+                <ul id="expense-details"></ul>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Clamendeena S || Budget Buddy</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
